@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Apology From Loki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="stars-bg" aria-hidden="true"></div>
+
+  <main class="app-shell">
+
+    <!-- LOGIN -->
+    <section class="screen login-screen is-active" id="loginScreen">
+      <div class="login-card">
+        <div class="small-badge">just one little thing</div>
+        <h1>Before we begin...</h1>
+        <p>Tell me your name and phone number first.</p>
+
+        <form id="loginForm">
+          <label for="userName">Your name</label>
+          <input id="userName" name="name" type="text" maxlength="100" placeholder="Enter your name" required>
+
+          <label for="phoneNumber">Phone number</label>
+          <input id="phoneNumber" name="phone" type="tel" maxlength="20" inputmode="tel" placeholder="Enter your phone number" required>
+
+          <button class="btn primary wide" type="submit">Enter <span>♡</span></button>
+        </form>
+
+        <p class="private-note">This is a private little page from Loki.</p>
+      </div>
+    </section>
+
+    <!-- LANDING -->
+    <section class="screen landing-screen" id="landingScreen">
+      <div class="eyebrow">a little message from Loki</div>
+      <h1>I have something<br><span>I want to say...</span></h1>
+      <div class="rule"><i></i><b>✿</b><i></i></div>
+
+      <button class="envelope" id="openLetter" type="button" aria-label="Open the apology letter">
+        <span class="envelope-flap"></span>
+        <span class="envelope-paper">
+          <strong>Hey you,</strong><br><br>
+          I have something important<br>
+          I want to tell you...
+        </span>
+        <span class="envelope-seal">✿</span>
+        <span class="envelope-label">open my letter<br><small>there is something inside...</small></span>
+      </button>
+
+      <p class="hint">tap the envelope when you're ready <span>✦</span></p>
+    </section>
+
+    <!-- LETTER -->
+    <section class="screen story-screen" id="letterScreen">
+      <div class="topline"><span>01 / 09</span><span>♡</span></div>
+
+      <div class="opened-letter">
+        <p>Hey You,</p>
+        <p>There is something I've been wanting to say for a while...</p>
+        <p>I know I may have hurt you, disappointed you, or made things difficult.</p>
+        <p>And for that, I am truly sorry.</p>
+        <p>— Loki</p>
+      </div>
+
+      <button class="btn primary" id="continueButton">read the next page <span>→</span></button>
+    </section>
+
+    <!-- APOLOGY -->
+    <section class="screen apology-screen" id="apologyScreen">
+      <div class="topline"><span>02 / 09</span><span>🌷</span></div>
+
+      <div class="apology-copy">
+        <p class="script-kicker">from my heart</p>
+        <h2>I'm<br><em>Sorry.</em> <span>🥺</span></h2>
+        <p class="quote">"I cannot change what happened, but I can honestly say that I regret hurting you."</p>
+      </div>
+
+      <div class="scene" id="scene">
+        <div class="moon"></div>
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+        <div class="ground"></div>
+        <div class="lamp"><i></i></div>
+
+        <div class="person girl-character" id="girlCharacter">
+          <i class="head"></i>
+          <i class="hair"></i>
+          <i class="body"></i>
+          <i class="arm"></i>
+          <i class="leg leg-a"></i>
+          <i class="leg leg-b"></i>
+        </div>
+
+        <div class="person boy-character" id="boyCharacter">
+          <i class="head"></i>
+          <i class="hair"></i>
+          <i class="body"></i>
+          <i class="arm"></i>
+          <i class="leg leg-a"></i>
+          <i class="leg leg-b"></i>
+        </div>
+
+        <div class="joined-heart" id="joinedHeart">♡</div>
+      </div>
+
+      <p class="prompt">I hope you can hear what I'm trying to say.</p>
+
+      <div class="actions">
+        <button class="btn primary" id="hearButton">Okay <span>🤍</span></button>
+        <button class="btn secondary" id="whyButton">Why? <span>🥺</span></button>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="screen story-screen why-screen" id="whyScreen">
+      <div class="topline"><span>03 / 09</span><span>🌿</span></div>
+      <p class="script-kicker">why am I saying sorry?</p>
+      <h2>Because...</h2>
+
+      <div class="reason-list">
+        <p>I care about the memories we have shared. <b>🤍</b></p>
+        <p>I never wanted my actions to make you feel bad. <b>🌷</b></p>
+        <p>I know a simple "sorry" cannot fix everything, but I mean it. <b>🥺</b></p>
+      </div>
+
+      <p class="prompt">Can you give me a chance to make things right?</p>
+
+      <div class="stack-actions">
+        <button class="btn primary" id="yesWhy">Okay, I understand <span>🤍</span></button>
+        <button class="btn secondary" id="noStart">Not yet <span>😔</span></button>
+      </div>
+    </section>
+
+    <!-- ATTEMPT 1 -->
+    <section class="screen story-screen attempt-screen" id="attempt1">
+      <div class="topline"><span>04 / 09</span><span>🌧️</span></div>
+      <p class="script-kicker">I understand...</p>
+      <h2>Are you still upset? 🥺</h2>
+      <p>That's okay. I won't force you to forgive me.</p>
+
+      <div class="attempt-actions">
+        <button class="btn primary" id="yesAttempt1">Okay <span>🤍</span></button>
+        <button class="btn secondary" id="no1">Still upset <span>😔</span></button>
+      </div>
+    </section>
+
+    <!-- ATTEMPT 2 -->
+    <section class="screen story-screen attempt-screen" id="attempt2">
+      <div class="topline"><span>05 / 09</span><span>🌙</span></div>
+      <p class="script-kicker">I'll give you space...</p>
+      <h2>Can you think about it again? 🤍</h2>
+      <p>I really mean my apology, Loki says it from the heart.</p>
+
+      <div class="attempt-actions">
+        <button class="btn primary big" id="yesAttempt2">Okay <span>🌷</span></button>
+        <button class="btn secondary small" id="no2">Not yet <span>🥺</span></button>
+      </div>
+    </section>
+
+    <!-- ATTEMPT 3 -->
+    <section class="screen story-screen attempt-screen" id="attempt3">
+      <div class="topline"><span>06 / 09</span><span>☁️</span></div>
+      <p class="script-kicker">one last time...</p>
+      <h2>I really am sorry. 🥺</h2>
+      <p>No pressure. I just wanted you to know how I feel.</p>
+
+      <div class="attempt-actions">
+        <button class="btn primary" id="yesAttempt3">I understand <span>🤍</span></button>
+        <button class="btn secondary" id="no3">I need time <span>🌧️</span></button>
+      </div>
+    </section>
+
+    <!-- TIME -->
+    <section class="screen story-screen time-screen" id="timeScreen">
+      <div class="topline"><span>07 / 09</span><span>🌙</span></div>
+      <div class="bunny">🐰</div>
+      <p class="script-kicker">okay...</p>
+      <h2>I'll respect that.</h2>
+      <p>I won't keep asking. Take the time you need.</p>
+      <p class="loki-sign">— Loki 🤍</p>
+
+      <button class="btn primary" id="maybeLater">Maybe later <span>🌷</span></button>
+    </section>
+
+    <!-- CELEBRATION -->
+    <section class="screen celebration-screen" id="celebrationScreen">
+      <div class="celebrate-sparkle">✦</div>
+      <p class="script-kicker">thank you for listening</p>
+      <h2>Thank You <span>🤍</span></h2>
+      <p>It means a lot that you heard me.</p>
+      <p>I hope we can leave the hurt behind and make better memories.</p>
+      <p class="loki-sign">— Loki 🌷</p>
+
+      <button class="btn secondary" id="againButton">read it again <span>↺</span></button>
+    </section>
+
+  </main>
+
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "loki-apology-website",
+  "version": "1.0.0",
+  "description": "Interactive apology webpage with Excel response storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "xlsx": "^0.18.5"
+  }
+}
